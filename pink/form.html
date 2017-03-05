@@ -2,9 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма</title>
 </head>
 <body>
+
+<header class="block-header">
+    <nav class="main-menu  main-menu--opened">
+        <div class="main-menu__title">
+            <img class="main-menu__logo"
+                 src="http://placehold.it/60x30"
+                 alt="logo">
+            <img class="main-menu__btn"
+                 src="http://placehold.it/30x30"
+                 alt="btn-show">
+        </div>
+        <div class="main-menu__menu-list">
+            <p class="main-menu__menu-item">
+                <a href="#">ГЛАВНАЯ</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">ФОТОГРАФИИ</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">КОНКУРС</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">HTML Academy</a>
+            </p>
+        </div>
+    </nav>
+    <p class="block-header__competition">Конкурс на самое безбашенное путешествие с Пинк</p>
+</header>
+
+<main>
+    <form class="user-data" action="https://echo.htmlacademy.ru/">
+        <p class="user-data__suggestion">Поделитесь своей историей и получите шанс выиграть
+            ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+        <fieldset class="user-data__info">
+            <label class="user-data__label  user-data__label--red"
+                   for="surname">ФАМИЛИЯ:</label><br>
+            <input class="user-data__info-input"
+                   type="text" id="surname" placeholder="Укажите фамилию *"><br>
+
+            <label class="user-data__label  user-data__label--red"
+                   for="name">ИМЯ:</label><br>
+            <input class="user-data__info-input"
+                   type="text" id="name" placeholder="Введите ваше имя *"><br>
+
+            <label class="user-data__label  user-data__label--red"
+                   for="patronymic">ОТЧЕСТВО:</label><br>
+            <input class="user-data__info-input"
+                   type="text" id="patronymic" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="user-data__actions">
+            <legend class="user-data__title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+
+            <input class="user-data__action-input" type="checkbox" id="selfie" checked>
+            <label class="user-data__label  user-data__label--black"
+                   for="selfie">Сделал селфи с акулой</label><br>
+
+
+            <input class="user-data__action-input" type="checkbox" id="beach" checked>
+            <label class="user-data__label  user-data__label--black"
+                   for="beach">Обгорел на пляже</label><br>
+
+
+            <input class="user-data__action-input" type="checkbox" id="Chuck">
+            <label class="user-data__label  user-data__label--black"
+                   for="Chuck">Видел Чака Норриса</label><br>
+
+
+            <input class="user-data__action-input" type="checkbox" id="souvenir">
+            <label class="user-data__label  user-data__label--black"
+                   for="souvenir">Накупил сувениров</label><br>
+
+
+            <input class="user-data__action-input" type="checkbox" id="tower" checked>
+            <label class="user-data__label  user-data__label--black"
+                   for="tower">Удержал башню</label><br>
+
+
+            <input class="user-data__action-input" type="checkbox" id="hotel">
+            <label class="user-data__label  user-data__label--black"
+                   for="hotel">Разгромил отель</label><br>
+        </fieldset>
+        <fieldset class="user-data__user-contacts">
+            <label class="user-data__label  user-data__label--red"
+                   for="phone-number">НОМЕР ТЕЛЕФОНА</label><br>
+            <input class="user-data__info-input"
+                   type="tel" id="phone-number" placeholder="Номер, пожалуйста"><br>
+
+            <label class="user-data__label  user-data__label--red"
+                   for="email">АДРЕС ПОЧТЫ</label><br>
+            <input class="user-data__info-input"
+                   type="email" id="email" placeholder="Введите почту *">
+        </fieldset>
+        <fieldset class="user-data__app">
+            <legend class="user-data__title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+            <input class="user-data__app-input"
+                   type="radio" name="radio-phones-os" id="radio-iOS" checked>
+            <label class="user-data__label  user-data__label--black"
+                   for="radio-iOS">Pink для iOS</label><br>
+
+            <input class="user-data__app-input"
+                   type="radio" name="radio-phones-os" id="radio-android">
+            <label class="user-data__label  user-data__label--black"
+                   for="radio-android">Pink на Android</label><br>
+
+            <input class="user-data__app-input"
+                   type="radio" name="radio-phones-os" id="radio-windows">
+            <label class="user-data__label  user-data__label--black"
+                   for="radio-windows">Windows Phone</label>
+        </fieldset>
+        <div class="user-data__emotions">
+            <p class="user-data__title">ОПИШИТЕ ВАШИ ЭМОЦИИ</p>
+            <textarea class="user-data__emotions-text"
+                      placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <button class="user-data__btn-submit" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+        <p class="user-data__note">* &mdash; ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+    </form>
+</main>
+
+<footer class="block-corp-info">
+    <img class="block-corp-info__logo"
+         src="http://placehold.it/80x30"
+         alt="logo">
+    <figure class="block-corp-info__social">
+        <a class="block-corp-info__social-link" href="#">
+            <img src="http://placehold.it/40x40" alt="image-twitter">
+        </a>
+        <a class="block-corp-info__social-link" href="#">
+            <img src="http://placehold.it/40x40" alt="image-facebook">
+        </a>
+        <a class="block-corp-info__social-link" href="#">
+            <img src="http://placehold.it/40x40" alt="image-youtube">
+        </a>
+    </figure>
+    <div class="block-corp__logo">
+        <p class="block-corp__logo-text">Разработано</p>
+        <img class="block-corp__logo-image"
+             src="http://placehold.it/40x40"
+             alt="logo">
+    </div>
+</footer>
 
 </body>
 </html>
