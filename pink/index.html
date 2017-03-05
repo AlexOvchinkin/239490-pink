@@ -9,8 +9,12 @@
 <header class="block-header">
     <nav class="main-menu  main-menu--opened">
         <div class="main-menu__title">
-            <p class="main-menu__text">PINK</p>
-            <div class="main-menu__icon">&#10006;</div>
+            <img class="main-menu__logo"
+                 src="http://placehold.it/60x30"
+                 alt="logo">
+            <img class="main-menu__btn"
+                 src="http://placehold.it/30x30"
+                 alt="btn-show">
         </div>
         <div class="main-menu__menu-list">
             <p class="main-menu__menu-item">
@@ -36,23 +40,21 @@
              alt="iphone-image">
         <img class="block-download__screen-image"
              src="http://placehold.it/150x100"
-             alt="iphone-image">
+             alt="screen-image">
     </div>
     <div>
-        <div class="block-download__btn">
-            <a href="#">Скачать приложение</a>
+        <a class="btn-download" href="#">Скачать приложение</a>
+        <div class="os-icons">
+            <img class="os-icons__image"
+                 src="http://placehold.it/150x100"
+                 alt="apple">
+            <img class="os-icons__image"
+                 src="http://placehold.it/150x100"
+                 alt="android">
+            <img class="os-icons__image"
+                 src="http://placehold.it/150x100"
+                 alt="windows">
         </div>
-        <ul class="os-icons">
-            <li class="os-icons__apple">
-                <img src="http://placehold.it/150x100" alt="apple">
-            </li>
-            <li class="os-icons__android">
-                <img src="http://placehold.it/150x100" alt="android">
-            </li>
-            <li class="os-icons__windows">
-                <img src="http://placehold.it/150x100" alt="windows">
-            </li>
-        </ul>
         <p class="block-download__description">Доступно для iPhone,
             iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -63,27 +65,47 @@
         <p>Устали от серости мегаполиса?</p>
         <p>Нам есть, что вам предложить!</p>
     </div>
-    <div class="marketing-tag">
-        <h2 class="marketing-tag__title">Поднимает настроение</h2>
-        <p class="marketing-tag__text">Приложение позволит вам победить
-            осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    <div class="block-information__content">
+        <article class="marketing-tag">
+            <h2 class="marketing-tag__title">Поднимает настроение</h2>
+            <p class="marketing-tag__text">Приложение позволит вам победить
+                осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </article>
+        <article class="marketing-tag">
+            <h2 class="marketing-tag__title">Меняет мир вокруг</h2>
+            <p class="marketing-tag__text">Сделайте снимок и украсьте его
+                смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </article>
+        <article class="marketing-tag">
+            <h2 class="marketing-tag__title">Заводите новых друзей</h2>
+            <p class="marketing-tag__text">Ставьте лайки, комментируйте, делитесь
+                фотографиями с друзьями и заводите новых</p>
+        </article>
     </div>
-    <div class="marketing-tag">
-        <h2 class="marketing-tag__title">Меняет мир вокруг</h2>
-        <p class="marketing-tag__text">Сделайте снимок и украсьте его
-            смайликом или текстовой подписью, чтобы усилить эффект</p>
-    </div>
-    <div class="marketing-tag">
-        <h2 class="marketing-tag__title">Заводите новых друзей</h2>
-        <p class="marketing-tag__text">Ставьте лайки, комментируйте, делитесь
-            фотографиями с друзьями и заводите новых</p>
-    </div>
-    <img class="block-information__phone-image"
+    <img class="block-information__image"
          src="http://placehold.it/150x300"
-         alt="phone-image">
+         alt="phone">
 </section>
 
 <section class="block-review">
+    <!-- [Вот тут не могу понять]: "Рано закрыл   <figure class="radio-slider">
+    ведь отзывы тоже являются частью слайдера."
+
+    Класс "radio-slider" используется в 2ух местах (в этом блоке и следующем),
+    а в CSS потом можно будет обратиться так:
+    - radio-slider__btn--first:checked ~ block-review__quote--first - вывести
+    эту карточку на передний план
+    - radio-slider__btn--first:checked ~ block-price__price-list - подвинуть
+    влево-вправо табличку с карточками цен
+
+    P.S. Исправил с
+    <article class="quote  quote--first">
+
+    на
+    <article class="block-review__quote  block-review__quote--first">
+
+    -->
+
     <figure class="radio-slider">
         <input class="radio-slider__btn  radio-slider__btn--first"
                type="radio"
@@ -95,7 +117,7 @@
                type="radio"
                name="block-review__radio-slider">
     </figure>
-    <article class="quote  quote--first">
+    <article class="block-review__quote  block-review__quote--first">
         <h3>Николай Петров</h3>
         <blockquote>
             &laquo;Это приложение перевернуло мой мир и позволило
@@ -104,7 +126,7 @@
             выложенной фотографии&raquo;
         </blockquote>
     </article>
-    <article class="quote  quote--second">
+    <article class="block-review__quote  block-review__quote--second">
         <h3>Николай Петров</h3>
         <blockquote>
             &laquo;Это приложение перевернуло мой мир и позволило
@@ -113,7 +135,7 @@
             выложенной фотографии&raquo;
         </blockquote>
     </article>
-    <article class="quote  quote--third">
+    <article class="block-review__quote  block-review__quote--third">
         <h3>Николай Петров</h3>
         <blockquote>
             &laquo;Это приложение перевернуло мой мир и позволило
@@ -136,82 +158,78 @@
                type="radio"
                name="block-price__radio-slider">
     </figure>
-    <table class="price-list">
-        <tr>
-            <th class="price-list__header" colspan="2">
-                <p class="price-list__header-title">МИНИМАЛЬНЫЙ</p>
-                <p class="price-list__header-price">2,49 USD</p>
-            </th>
-            <th class="price-list__header  price-list__header--hit" colspan="2">
-                <p class="price-list__header-title">СТАНДАРТ</p>
-                <p class="price-list__header-price">3,99 USD</p>
-            </th>
-            <th class="price-list__header" colspan="2">
-                <p class="price-list__header-title">МАКСИМАЛЬНЫЙ</p>
-                <p class="price-list__header-price">5,49 USD</p>
-            </th>
-        </tr>
-        <tr>
-            <td class="price-list__description">РОЗОВЫЙ ФИЛЬТР</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-            <td class="price-list__description">РОЗОВЫЙ ФИЛЬТР</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-            <td class="price-list__description">РОЗОВЫЙ ФИЛЬТР</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-        </tr>
-        <tr>
-            <td class="price-list__description">СМАЙЛИКИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-no" src="http://placehold.it/30x30" alt="no">
-            </td>
-            <td class="price-list__description">СМАЙЛИКИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-            <td class="price-list__description">СМАЙЛИКИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-        </tr>
-        <tr>
-            <td class="price-list__description">КОММЕНТАРИИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-no" src="http://placehold.it/30x30" alt="no">
-            </td>
-            <td class="price-list__description">КОММЕНТАРИИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-no" src="http://placehold.it/30x30" alt="no">
-            </td>
-            <td class="price-list__description">КОММЕНТАРИИ</td>
-            <td class="price-list__img">
-                <img class="price-list__img-yes" src="http://placehold.it/30x30" alt="yes">
-            </td>
-        </tr>
-    </table>
+    <div class="block-price__price-list">
+        <article class="block-price__card">
+            <div class="block-price__card-header">
+                <p class="block-price__card-rate-name">МИНИМАЛЬНЫЙ</p>
+                <p class="block-price__card-rate-cost">2,49 USD</p>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">СМАЙЛИКИ</p>
+                <div class="block-price__item-image  block-price__item-image--no"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                <div class="block-price__item-image  block-price__item-image--no"></div>
+            </div>
+        </article>
+        <article class="block-price__card">
+            <div class="block-price__card-header">
+                <p class="block-price__card-rate-name">СТАНДАРТ</p>
+                <p class="block-price__card-rate-cost">3,99 USD</p>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">СМАЙЛИКИ</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                <div class="block-price__item-image  block-price__item-image--no"></div>
+            </div>
+        </article>
+        <article class="block-price__card">
+            <div class="block-price__card-header">
+                <p class="block-price__card-rate-name">МАКСИМАЛЬНЫЙ</p>
+                <p class="block-price__card-rate-cost">4,99 USD</p>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">СМАЙЛИКИ</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+            <div class="block-price__item">
+                <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                <div class="block-price__item-image  block-price__item-image--yes"></div>
+            </div>
+        </article>
+    </div>
 </section>
 
 <section class="block-about">
     <p class="block-about__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-    <figure class="contacts">
-        <div class="contacts__item">
-            <p class="contacts__item-title">Звоните:</p>
-            <span class="contacts__item-info">+7 (812) 555-66-66</span>
-        </div>
-        <div class="contacts__item">
-            <p class="contacts__item-title">Пишите:</p>
-            <span class="contacts__item-info">mail@htmlacademy.ru</span>
-        </div>
-        <div class="contacts__item">
-            <p class="contacts__item-title">Приезжайте в гости:</p>
-            <span class="contacts__item-info">ул. Большая Конюшенная, 19/8</span>
-        </div>
-    </figure>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Звоните:</p>
+        <a class="block-about__item-info" href="#">+7 (812) 555-66-66</a>
+    </div>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Пишите:</p>
+        <a class="block-about__item-info" href="#">mail@htmlacademy.ru</a>
+    </div>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Приезжайте в гости:</p>
+        <span class="block-about__item-info">ул. Большая Конюшенная, 19/8</span>
+    </div>
     <div class="block-about__map"></div>
 </section>
 
