@@ -8,13 +8,9 @@
 
 <header class="block-header">
     <nav class="main-menu  main-menu--opened">
-        <div class="main-menu__title">
-            <img class="main-menu__logo"
-                 src="http://placehold.it/60x30"
-                 alt="logo">
-            <img class="main-menu__btn"
-                 src="http://placehold.it/30x30"
-                 alt="btn-show">
+        <div class="main-menu__logotype">
+            <img class="main-menu__logo" src="http://placehold.it/40x20" alt="menu-image">
+            <button class="main-menu__btn" type="button"></button>
         </div>
         <div class="main-menu__menu-list">
             <p class="main-menu__menu-item">
@@ -31,7 +27,7 @@
             </p>
         </div>
     </nav>
-    <p class="block-header__competition">Конкурс на самое безбашенное путешествие с Пинк</p>
+    <h1 class="block-header__competition">Конкурс на самое безбашенное путешествие с Пинк</h1>
 </header>
 
 <main>
@@ -42,12 +38,12 @@
             <label class="user-data__label  user-data__label--red"
                    for="surname">ФАМИЛИЯ:</label><br>
             <input class="user-data__info-input"
-                   type="text" id="surname" placeholder="Укажите фамилию *"><br>
+                   type="text" id="surname" placeholder="Укажите фамилию *" required><br>
 
             <label class="user-data__label  user-data__label--red"
                    for="name">ИМЯ:</label><br>
             <input class="user-data__info-input"
-                   type="text" id="name" placeholder="Введите ваше имя *"><br>
+                   type="text" id="name" placeholder="Введите ваше имя *" required><br>
 
             <label class="user-data__label  user-data__label--red"
                    for="patronymic">ОТЧЕСТВО:</label><br>
@@ -95,7 +91,7 @@
             <label class="user-data__label  user-data__label--red"
                    for="email">АДРЕС ПОЧТЫ</label><br>
             <input class="user-data__info-input"
-                   type="email" id="email" placeholder="Введите почту *">
+                   type="email" id="email" placeholder="Введите почту *" required>
         </fieldset>
         <fieldset class="user-data__app">
             <legend class="user-data__title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
@@ -136,10 +132,10 @@
            href="https://www.youtube.com/"></a>
     </div>
 
-    <div class="block-corp__logo">
-        <p class="block-corp__logo-text">Разработано</p>
-        <div class="block-corp__logo-image"></div>
-    </div>
+    <a class="block-corp__copyright" href="https://htmlacademy.ru/">
+        <span class="block-corp__copyright-text">Разработано</span>
+        <div class="block-corp__copyright-image"></div>
+    </a>
 </footer>
 
 </body>
