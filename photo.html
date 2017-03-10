@@ -10,8 +10,8 @@
     <nav class="main-menu  main-menu--opened">
         <div class="main-menu__logotype">
             <img class="main-menu__logo" src="http://placehold.it/40x20" alt="menu-image">
-            <button class="main-menu__btn" type="button"></button>
         </div>
+        <button class="main-menu__btn" type="button"></button>
         <div class="main-menu__menu-list">
             <p class="main-menu__menu-item">
                 <a href="#">ГЛАВНАЯ</a>
@@ -33,9 +33,9 @@
 <section class="block-photos">
     <p class="block-photos__title">Взгляните на фотографии, которые выкладывают
         пользователи! Видите как нехватает ваших?</p>
-    <figure class="block-photos__user-photos">
+    <div class="block-photos__user-photos">
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image  user-card__image--panorama"
                      src="http://placehold.it/340x150"
                      alt="photo">
@@ -56,7 +56,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -76,7 +76,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -95,7 +95,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -114,7 +114,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -133,7 +133,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -152,7 +152,7 @@
         </figure>
 
         <figure class="user-card">
-            <a href="#">
+            <a class="user-card__image-link" href="#">
                 <img class="user-card__image"
                      src="http://placehold.it/300x150"
                      alt="photo">
@@ -169,7 +169,7 @@
                 </div>
             </figcaption>
         </figure>
-    </figure>
+    </div>
 
     <p class="block-photos__suggestion">
         Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
@@ -178,9 +178,11 @@
 
 <section class="block-posting">
     <form class="posting-form" action="https://echo.htmlacademy.ru/">
-        <img class="posting-form__image"
-             src="http://placehold.it/300x400"
-             alt="image">
+        <div class="posting-form__picture">
+            <img class="posting-form__image"
+                 src="http://placehold.it/300x400"
+                 alt="image">
+        </div>
 
         <div class="posting-form__edit-buttons">
             <input type="radio"
