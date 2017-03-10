@@ -1,12 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
-  </body>
+<header class="block-header">
+    <nav class="main-menu  main-menu--opened">
+        <div class="main-menu__logotype">
+            <img class="main-menu__logo" src="http://placehold.it/40x20" alt="menu-image">
+        </div>
+        <button class="main-menu__btn" type="button"></button>
+        <div class="main-menu__menu-list">
+            <p class="main-menu__menu-item">
+                <a href="#">ГЛАВНАЯ</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">ФОТОГРАФИИ</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">КОНКУРС</a>
+            </p>
+            <p class="main-menu__menu-item">
+                <a href="#">HTML Academy</a>
+            </p>
+        </div>
+    </nav>
+</header>
+
+<section class="block-download">
+    <div class="block-download__image">
+        <img class="block-download__iphone-image"
+             src="http://placehold.it/100x150"
+             alt="iphone-image">
+        <img class="block-download__screen-image"
+             src="http://placehold.it/100x150"
+             alt="screen-image">
+    </div>
+    <div>
+        <a class="btn  block-download__btn"
+           href="https://play.google.com/store?hl=ru">Скачать приложение</a>
+        <div class="os-icons">
+            <a class="os-icons__link  os-icons__link--apple"
+               href="https://itunes.apple.com/ru/genre/ios/id36?mt=8"></a>
+            <a class="os-icons__link  os-icons__link--android"
+               href="https://play.google.com/store?hl=ru"></a>
+            <a class="os-icons__link  os-icons__link--windows"
+               href="https://www.microsoft.com/ru-ru/store/apps"></a>
+        </div>
+        <p class="block-download__description">Доступно для iPhone,
+            iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+</section>
+
+<section class="block-info">
+    <div class="block-info__header">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+    </div>
+    <ul class="block-info__list">
+        <li class="block-info__item">
+            <h2 class="block-info__item-title">Поднимает настроение</h2>
+            <p class="block-info__item-text">Приложение позволит вам победить
+                осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="block-info__item">
+            <h2 class="block-info__item-title">Меняет мир вокруг</h2>
+            <p class="block-info__item-text">Сделайте снимок и украсьте его
+                смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="block-info__item">
+            <h2 class="block-info__item-title">Заводите новых друзей</h2>
+            <p class="block-info__item-text">Ставьте лайки, комментируйте, делитесь
+                фотографиями с друзьями и заводите новых</p>
+        </li>
+    </ul>
+    <img class="block-info__image" src="http://placehold.it/100x200" alt="screen-image">
+</section>
+
+<section class="block-feedback">
+    <div class="block-feedback__blockquotes">
+        <input class="block-feedback__control  block-feedback__control--first"
+               type="radio"
+               id="block-feedback__control-first"
+               name="block-feedback-radio" checked>
+        <input class="block-feedback__control  block-feedback__control--second"
+               type="radio"
+               id="block-feedback__control-second"
+               name="block-feedback-radio">
+        <input class="block-feedback__control  block-feedback__control--third"
+               type="radio"
+               id="block-feedback__control-third"
+               name="block-feedback-radio">
+
+        <div class="radio-control  block-feedback__control-labels">
+            <label class="radio-control__label" for="block-feedback__control-first"></label>
+            <label class="radio-control__label" for="block-feedback__control-second"></label>
+            <label class="radio-control__label" for="block-feedback__control-third"></label>
+        </div>
+
+        <article class="block-review__quote  block-review__quote--first">
+            <h3 class="block-review__user">Николай Петров</h3>
+            <blockquote class="block-review__text">
+                &laquo;Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к
+                выложенной фотографии&raquo;
+            </blockquote>
+        </article>
+        <article class="block-review__quote  block-review__quote--second">
+            <h3 class="block-review__user">Николай Петров</h3>
+            <blockquote class="block-review__text">
+                &laquo;Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к
+                выложенной фотографии&raquo;
+            </blockquote>
+        </article>
+        <article class="block-review__quote  block-review__quote--third">
+            <h3 class="block-review__user">Николай Петров</h3>
+            <blockquote class="block-review__text">
+                &laquo;Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к
+                выложенной фотографии&raquo;
+            </blockquote>
+        </article>
+    </div>
+</section>
+
+<section class="block-price">
+    <div class="block-price__price-table">
+        <input class="block-price__radio-control  block-price__radio-control--first"
+               type="radio"
+               id="block-price__control-first"
+               name="block-price__radio-control">
+        <input class="block-price__radio-control  block-price__radio-control--second"
+               type="radio"
+               id="block-price__control-second"
+               name="block-price__radio-control" checked>
+        <input class="block-price__radio-control  block-price__radio-control--third"
+               type="radio"
+               id="block-price__control-third"
+               name="block-price__radio-control">
+
+        <div class="radio-control  block-price__control-labels">
+            <label class="radio-control-label" for="block-price__control-first"></label>
+            <label class="radio-control-label" for="block-price__control-second"></label>
+            <label class="radio-control-label" for="block-price__control-third"></label>
+        </div>
+
+        <div class="block-price__price-list">
+            <article class="block-price__card">
+                <div class="block-price__card-header">
+                    <p class="block-price__card-rate-name">МИНИМАЛЬНЫЙ</p>
+                    <p class="block-price__card-rate-cost">2,49 USD</p>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">СМАЙЛИКИ</p>
+                    <div class="block-price__item-image  block-price__item-image--no"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                    <div class="block-price__item-image  block-price__item-image--no"></div>
+                </div>
+            </article>
+            <article class="block-price__card  block-price__card--hit">
+                <div class="block-price__card-header">
+                    <p class="block-price__card-rate-name">СТАНДАРТ</p>
+                    <p class="block-price__card-rate-cost">3,99 USD</p>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">СМАЙЛИКИ</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                    <div class="block-price__item-image  block-price__item-image--no"></div>
+                </div>
+            </article>
+            <article class="block-price__card">
+                <div class="block-price__card-header">
+                    <p class="block-price__card-rate-name">МАКСИМАЛЬНЫЙ</p>
+                    <p class="block-price__card-rate-cost">4,99 USD</p>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">РОЗОВЫЙ ФИЛЬТР</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">СМАЙЛИКИ</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+                <div class="block-price__item">
+                    <p class="block-price__item-name">КОММЕНТАРИИ</p>
+                    <div class="block-price__item-image  block-price__item-image--yes"></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<footer class="block-about">
+    <p class="block-about__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Звоните:</p>
+        <a class="block-about__item-info" href="#">+7 (812) 555-66-66</a>
+    </div>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Пишите:</p>
+        <a class="block-about__item-info" href="#">mail@htmlacademy.ru</a>
+    </div>
+    <div class="block-about__item">
+        <p class="block-about__item-title">Приезжайте в гости:</p>
+        <span class="block-about__item-info">ул. Большая Конюшенная, 19/8</span>
+    </div>
+    <div class="block-about__map"></div>
+</footer>
+
+</body>
 </html>
