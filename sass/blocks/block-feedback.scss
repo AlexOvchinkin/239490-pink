@@ -1,0 +1,63 @@
+.block-feedback {
+    margin-top: -85px;
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+}
+
+.block-feedback__blockquotes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.block-feedback__blockquotes::before {
+    display: block;
+    height: 80px;
+    width: $mobileWidth;
+    content: "";
+    mask: url("../img/bg-triangle-white.svg") no-repeat 50% 50%;
+    background-color: white;
+}
+
+.block-feedback__quote {
+    display: none;
+    height: 300px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+}
+
+.block-feedback__control-labels {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.block-feedback__control {
+    display: none;
+}
+
+.block-feedback__control--first:checked ~ .block-review__quote--first {
+    display: block;
+}
+
+.block-feedback__control--second:checked ~ .block-review__quote--second {
+    display: block;
+}
+
+.block-feedback__control--third:checked ~ .block-review__quote--third {
+    display: block;
+}
+
+.block-feedback__user {
+    margin-top: 45px;
+    font-family: opensansbold;
+    font-size: 18px;
+}
+
+.block-feedback__text {
+    font-family: opensans;
+    font-size: 14px;
+    line-height: 2.1;
+    margin: 20px;
+}

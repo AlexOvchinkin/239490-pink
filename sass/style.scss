@@ -1,0 +1,25 @@
+@font-face {
+    font-family: opensansbold;
+    src: url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: opensans;
+    src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: opensanslight;
+    src: url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+@import "variables";
+
+@import "blocks/block-download";
+@import "blocks/block-feedback";
+@import "blocks/block-header";
+@import "blocks/block-info";
+@import "blocks/block-page";
+@import "blocks/block-price";
+@import "blocks/btn";
+@import "blocks/radio-control";

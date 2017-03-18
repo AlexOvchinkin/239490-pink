@@ -1,0 +1,94 @@
+@mixin tableBorder($color) {
+    border-left: 1px solid $color;
+    border-right: 1px solid $color;
+}
+
+@mixin tableIcon($url, $color) {
+    mask: $url no-repeat center;
+    background-color: $color;
+    background-size: 100%;
+}
+
+.block-price__price-table {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.block-price__price-list {
+    display: flex;
+}
+
+.block-price__card-header {
+    text-align: center;
+    color: white;
+    background-color: #283645;
+    padding: 10px;
+
+    @include tableBorder(white);
+}
+
+.block-price__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tableBorder(lightgray);
+    border-bottom: 1px solid lightgray;
+
+    background-color: white;
+    font-family: opensans;
+    font-size: 14px;
+    width: 280px;
+}
+
+.block-price__radio-control {
+    display: none;
+}
+
+.block-price__radio-control--first:checked ~ .block-price__price-list {
+    transform: translateX(20px);
+}
+
+.block-price__radio-control--second:checked ~ .block-price__price-list {
+    transform: translateX(-260px);
+}
+
+.block-price__radio-control--third:checked ~ .block-price__price-list {
+    transform: translateX(-540px);
+}
+
+.block-price__item-name {
+    margin: 20px;
+}
+
+.block-price__card-rate-name {
+    font-size: 17px;
+    font-family: opensansbold;
+    margin: 10px 0 5px 0;
+}
+
+.block-price__card-rate-cost {
+    font-size: 24px;
+    font-family: opensanslight;
+    margin: 5px 0 10px 0;
+}
+
+.block-price__item-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.block-price__item-image--yes {
+    @include tableIcon(url("../img/icon-yes.svg"), #3dc644);
+}
+
+.block-price__item-image--no {
+    @include tableIcon(url("../img/icon-no.svg") , red);
+}
+
+.block-price__control-labels {
+    margin: 45px 0;
+}

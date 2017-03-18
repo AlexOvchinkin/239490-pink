@@ -1,0 +1,66 @@
+.block-download__image {
+    width: $mobileWidth;
+    height: 400px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+    position: relative;
+}
+
+.block-download__iphone-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.block-download__links {
+    background-color: #1d2631;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-download__btn {
+    width: 280px;
+    margin: 30px 0 35px 0;
+}
+
+.os-icons {
+    display: flex;
+    width: 240px;
+    justify-content: space-around;
+}
+
+.os-icons__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.os-icons__link--apple {
+    background: url("../img/logo-apple.svg") no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.os-icons__link--android {
+    background: url("../img/logo-android.svg") no-repeat;
+    background-size: 50px 50px;
+    align-self: flex-end;
+}
+
+.os-icons__link--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat;
+    background-size: 50px 50px;
+    align-self: flex-end;
+}
+
+.block-download__description {
+    width: 240px;
+    color: white;
+    font-family: opensanslight;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+    margin: 20px 0 35px 0;
+}
+
