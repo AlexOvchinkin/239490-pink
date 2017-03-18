@@ -1,0 +1,135 @@
+$height: 63px;
+
+$logoHeightMobile: 73px;
+$logoHeightTablet: 108px;
+
+$desktopMenuBgColor: rgba(15, 20, 25, 0.5);
+
+@mixin menuItemStyle {
+    background-color: #283645;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #061628;
+}
+
+.main-menu {
+    position: relative;
+    width: 100%;
+}
+
+.main-menu__logotype {
+    width: 100%;
+
+    margin: 0;
+    position: relative;
+
+    @include menuItemStyle;
+}
+
+.main-menu__logo-mobile {
+    margin: 20px 0 20px 20px;
+}
+
+.main-menu__logo-tablet {
+    display: none;
+}
+
+.main-menu__btn {
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    top: 33px;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+
+    background: url("../img/icon-menu-cross.svg") no-repeat center;
+}
+
+.main-menu__menu-item {
+    width: 100%;
+    height: $height;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include menuItemStyle;
+}
+
+.main-menu__menu-item a {
+    text-decoration: none;
+    color: white;
+    font-family: opensansbold;
+    font-size: 17px;
+}
+
+
+@media screen and (min-width: $tabletMinWidth) {
+
+    .main-menu__logotype {
+        height: $logoHeightTablet;
+    }
+
+    .main-menu__logo-mobile {
+        display: none;
+    }
+
+    .main-menu__logo-tablet {
+        display: block;
+        margin: 24px 0 43px 40px;
+
+    }
+
+    .main-menu__btn {
+        top: 54px;
+    }
+}
+
+
+@media screen and (min-width: $desktopMinWidth) {
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+        background-color: $desktopMenuBgColor;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .main-menu__menu-list {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        width: 615px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .main-menu__logotype {
+        border: none;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .main-menu__logo-tablet {
+        margin: 25px 170px 40px 130px;
+    }
+
+    .main-menu__menu-item {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .main-menu__btn {
+        display: none;
+    }
+
+    .main-menu__menu-item a {
+        font-size: 16px;
+        font-family: opensans;
+    }
+}
